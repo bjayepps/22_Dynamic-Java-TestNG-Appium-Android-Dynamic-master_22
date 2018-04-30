@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-com.saucelabs.example.TestSetup">
+              <span class="suite-name border-failed">com.saucelabs.example.TestSetup</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-com.saucelabs.example.TestSetup">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-com.saucelabs.example.TestSetup">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-com.saucelabs.example.TestSetup">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-com.saucelabs.example.TestSetup">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-com.saucelabs.example.TestSetup">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-com.saucelabs.example.TestSetup">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-com.saucelabs.example.TestSetup">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.saucelabs.example.TestSetup" class="hide-methods failed suite-com.saucelabs.example.TestSetup"> (hide)</a> <!-- hide-methods failed suite-com.saucelabs.example.TestSetup -->
+                      <a href="#" panel-name="suite-com.saucelabs.example.TestSetup" class="show-methods failed suite-com.saucelabs.example.TestSetup"> (show)</a> <!-- show-methods failed suite-com.saucelabs.example.TestSetup -->
+                    </span>
+                    <div class="method-list-content failed suite-com.saucelabs.example.TestSetup">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.saucelabs.example.TestSetup" title="com.saucelabs.example.TestSetup" hash-for-method="twoPlusTwoOperation(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)">twoPlusTwoOperation(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.saucelabs.example.TestSetup" title="com.saucelabs.example.TestSetup" hash-for-method="twoPlusTwoOperation(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.S...)">twoPlusTwoOperation(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.saucelabs.example.TestSetup" title="com.saucelabs.example.TestSetup" hash-for-method="twoPlusTwoOperation(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)">twoPlusTwoOperation(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.saucelabs.example.TestSetup" title="com.saucelabs.example.TestSetup" hash-for-method="twoPlusTwoOperation(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.St...)">twoPlusTwoOperation(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.St...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-com.saucelabs.example.TestSetup" title="com.saucelabs.example.TestSetup" hash-for-method="twoPlusTwoOperation(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang....)">twoPlusTwoOperation(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang....)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.saucelabs.example.TestSetup -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-com.saucelabs.example.TestSetup" class="panel com.saucelabs.example.TestSetup">
+          <div class="suite-com.saucelabs.example.TestSetup-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.saucelabs.example.TestSetup</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="twoPlusTwoOperation(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)">
+                  </a> <!-- twoPlusTwoOperation(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....) -->
+                  <span class="method-name">twoPlusTwoOperation</span>
+                  <span class="parameters">(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text (&apos;4&apos;) to be present in element [[AndroidDriver:  on LINUX (e494c1b2-c096-4035-89ca-3fc9b76d8727)] -&gt; xpath: //android.widget.EditText[1]]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Jay-Epps-SL0200.local&apos;, ip: &apos;172.20.0.245&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=net.ludeke.calculator, testobject_user_id=se-team, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/se-team/calculator/appium/executions/793, testobject_device_name=Samsung Galaxy S6, testobject_device_session_id=ced021e8-c714-4177-8f51-d294150eece7, deviceName=071607eb67920c03, platform=LINUX, deviceUDID=071607eb67920c03, testobject_test_report_id=793, desired={appPackage=net.ludeke.calculator, testobject_platform_name=Android, testobject_test_name=twoPlusTwoOperation, appiumVersion=1.6.5, testobject_device=Samsung Galaxy S6, adbPort=15005, deviceName=Samsung_Galaxy_S6_real, appActivity=com.android.calculator2.Calculator, testobject_appium_version=1.6.5, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, platformName=Android, systemPort=8205}, testobject_appium_version=1.6.5, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, systemPort=8205, deviceScreenSize=1440x2560, networkConnectionEnabled=true, testobject_test_name=twoPlusTwoOperation, warnings={}, appiumVersion=1.6.5, testobject_device=Samsung_Galaxy_S6_real, databaseEnabled=false, adbPort=15005, testobject_project_id=calculator, appActivity=com.android.calculator2.Calculator, locationContextEnabled=false, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, deviceModel=SM-G920I, testobject_test_live_view_url=https://app.testobject.com/#/se-team/calculator/appium/view/793?dc=US}]
+Session ID: e494c1b2-c096-4035-89ca-3fc9b76d8727
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.saucelabs.example.TestSetup.twoPlusTwoOperation(TestSetup.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="twoPlusTwoOperation(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.S...)">
+                  </a> <!-- twoPlusTwoOperation(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.S...) -->
+                  <span class="method-name">twoPlusTwoOperation</span>
+                  <span class="parameters">(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text (&apos;4&apos;) to be present in element [[AndroidDriver:  on LINUX (1335cb51-c867-44b8-9a08-b3c03678fbed)] -&gt; xpath: //android.widget.EditText[1]]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Jay-Epps-SL0200.local&apos;, ip: &apos;172.20.0.245&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=net.ludeke.calculator, testobject_user_id=se-team, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/se-team/calculator/appium/executions/790, testobject_device_name=HTC Nexus 9, testobject_device_session_id=c799be97-0440-4969-a953-95c55e15d515, deviceName=HT4APJT05723, platform=LINUX, deviceUDID=HT4APJT05723, testobject_test_report_id=790, desired={appPackage=net.ludeke.calculator, testobject_platform_name=Android, testobject_test_name=twoPlusTwoOperation, appiumVersion=1.6.5, testobject_device=HTC Nexus 9, adbPort=15000, deviceName=HTC_Nexus_9_real, appActivity=com.android.calculator2.Calculator, testobject_appium_version=1.6.5, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, platformName=Android, systemPort=8200}, testobject_appium_version=1.6.5, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=htc, systemPort=8200, deviceScreenSize=1536x2048, networkConnectionEnabled=true, testobject_test_name=twoPlusTwoOperation, warnings={}, appiumVersion=1.6.5, testobject_device=HTC_Nexus_9_real, databaseEnabled=false, adbPort=15000, testobject_project_id=calculator, appActivity=com.android.calculator2.Calculator, locationContextEnabled=false, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, deviceModel=Nexus 9, testobject_test_live_view_url=https://app.testobject.com/#/se-team/calculator/appium/view/790?dc=US}]
+Session ID: 1335cb51-c867-44b8-9a08-b3c03678fbed
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.saucelabs.example.TestSetup.twoPlusTwoOperation(TestSetup.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="twoPlusTwoOperation(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)">
+                  </a> <!-- twoPlusTwoOperation(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....) -->
+                  <span class="method-name">twoPlusTwoOperation</span>
+                  <span class="parameters">(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text (&apos;4&apos;) to be present in element [[AndroidDriver:  on LINUX (4c68254a-5cbf-4291-82d5-0a4678efb970)] -&gt; xpath: //android.widget.EditText[1]]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Jay-Epps-SL0200.local&apos;, ip: &apos;172.20.0.245&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=net.ludeke.calculator, testobject_user_id=se-team, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/se-team/calculator/appium/executions/794, testobject_device_name=Samsung Galaxy S5, testobject_device_session_id=7278d6e2-bd57-4bc7-b26e-80f3f29cb05e, deviceName=591b8212, platform=LINUX, deviceUDID=591b8212, testobject_test_report_id=794, desired={appPackage=net.ludeke.calculator, testobject_platform_name=Android, testobject_test_name=twoPlusTwoOperation, appiumVersion=1.6.5, testobject_device=Samsung Galaxy S5, adbPort=15024, deviceName=Samsung_Galaxy_S5_real, appActivity=com.android.calculator2.Calculator, testobject_appium_version=1.6.5, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, platformName=Android, systemPort=8224}, testobject_appium_version=1.6.5, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=samsung, systemPort=8224, deviceScreenSize=1080x1920, networkConnectionEnabled=true, testobject_test_name=twoPlusTwoOperation, warnings={}, appiumVersion=1.6.5, testobject_device=Samsung_Galaxy_S5_real, databaseEnabled=false, adbPort=15024, testobject_project_id=calculator, appActivity=com.android.calculator2.Calculator, locationContextEnabled=false, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, deviceModel=SM-G900F, testobject_test_live_view_url=https://app.testobject.com/#/se-team/calculator/appium/view/794?dc=US}]
+Session ID: 4c68254a-5cbf-4291-82d5-0a4678efb970
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.saucelabs.example.TestSetup.twoPlusTwoOperation(TestSetup.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="twoPlusTwoOperation(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.St...)">
+                  </a> <!-- twoPlusTwoOperation(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.St...) -->
+                  <span class="method-name">twoPlusTwoOperation</span>
+                  <span class="parameters">(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text (&apos;4&apos;) to be present in element [[AndroidDriver:  on LINUX (92220961-57b5-455f-9948-a03335098138)] -&gt; xpath: //android.widget.EditText[1]]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Jay-Epps-SL0200.local&apos;, ip: &apos;172.20.0.245&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=net.ludeke.calculator, testobject_user_id=se-team, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/se-team/calculator/appium/executions/792, testobject_device_name=LG Nexus 5, testobject_device_session_id=8a74746a-2bf5-475e-9ac2-15c3801e9981, deviceName=0605c38cf0db3da6, platform=LINUX, deviceUDID=0605c38cf0db3da6, testobject_test_report_id=792, desired={appPackage=net.ludeke.calculator, testobject_platform_name=Android, testobject_test_name=twoPlusTwoOperation, appiumVersion=1.6.5, testobject_device=LG Nexus 5, adbPort=15007, deviceName=LG_Nexus_5_real, appActivity=com.android.calculator2.Calculator, testobject_appium_version=1.6.5, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, platformName=Android, systemPort=8207}, testobject_appium_version=1.6.5, platformVersion=6.0.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=LGE, systemPort=8207, deviceScreenSize=1080x1920, networkConnectionEnabled=true, testobject_test_name=twoPlusTwoOperation, warnings={}, appiumVersion=1.6.5, testobject_device=LG_Nexus_5_real, databaseEnabled=false, adbPort=15007, testobject_project_id=calculator, appActivity=com.android.calculator2.Calculator, locationContextEnabled=false, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, deviceModel=Nexus 5, testobject_test_live_view_url=https://app.testobject.com/#/se-team/calculator/appium/view/792?dc=US}]
+Session ID: 92220961-57b5-455f-9948-a03335098138
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.saucelabs.example.TestSetup.twoPlusTwoOperation(TestSetup.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="twoPlusTwoOperation(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang....)">
+                  </a> <!-- twoPlusTwoOperation(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang....) -->
+                  <span class="method-name">twoPlusTwoOperation</span>
+                  <span class="parameters">(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.net.MalformedURLException)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for text (&apos;4&apos;) to be present in element [[AndroidDriver:  on LINUX (2c95580b-ee95-44e4-b675-ca901d988783)] -&gt; xpath: //android.widget.EditText[1]]
+Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
+System info: host: &apos;Jay-Epps-SL0200.local&apos;, ip: &apos;172.20.0.245&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.4&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=net.ludeke.calculator, testobject_user_id=se-team, testobject_platform_name=Android, testobject_test_report_url=https://app.testobject.com/#/se-team/calculator/appium/executions/791, testobject_device_name=Google Pixel, testobject_device_session_id=04997de8-77b9-46ea-933f-eb55c6e01ae1, deviceName=FA6AW0300390, platform=LINUX, deviceUDID=FA6AW0300390, testobject_test_report_id=791, desired={appPackage=net.ludeke.calculator, testobject_platform_name=Android, testobject_test_name=twoPlusTwoOperation, appiumVersion=1.6.5, testobject_device=Google Pixel, adbPort=15001, deviceName=Google_Pixel_real, appActivity=com.android.calculator2.Calculator, testobject_appium_version=1.6.5, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, platformName=Android, systemPort=8201}, testobject_appium_version=1.6.5, platformVersion=7.1.1, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceManufacturer=Google, systemPort=8201, deviceScreenSize=1080x1920, networkConnectionEnabled=true, testobject_test_name=twoPlusTwoOperation, warnings={}, appiumVersion=1.6.5, testobject_device=Google_Pixel_real, databaseEnabled=false, adbPort=15001, testobject_project_id=calculator, appActivity=com.android.calculator2.Calculator, locationContextEnabled=false, name=twoPlusTwoOperation, testobject_api_key=D7348099E5FC44458E807282AF87FDB4, deviceModel=Pixel, testobject_test_live_view_url=https://app.testobject.com/#/se-team/calculator/appium/view/791?dc=US}]
+Session ID: 2c95580b-ee95-44e4-b675-ca901d988783
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.saucelabs.example.TestSetup.twoPlusTwoOperation(TestSetup.java:127)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 9 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.saucelabs.example.TestSetup-class-failed -->
+        </div> <!-- panel com.saucelabs.example.TestSetup -->
+        <div panel-name="test-xml-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;com.saucelabs.example.TestSetup&quot;&gt;
+  &lt;test name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.saucelabs.example.TestSetup&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- com.saucelabs.example.TestSetup --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for com.saucelabs.example.TestSetup</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for com.saucelabs.example.TestSetup</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for com.saucelabs.example.TestSetup</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_com.saucelabs.example.TestSetup');
+function tableData_com.saucelabs.example.TestSetup() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'twoPlusTwoOperation')
+data.setCell(0, 2, 'com.saucelabs.example.TestSetup')
+data.setCell(0, 3, 165286);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'twoPlusTwoOperation')
+data.setCell(1, 2, 'com.saucelabs.example.TestSetup')
+data.setCell(1, 3, 159460);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'twoPlusTwoOperation')
+data.setCell(2, 2, 'com.saucelabs.example.TestSetup')
+data.setCell(2, 3, 133028);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'twoPlusTwoOperation')
+data.setCell(3, 2, 'com.saucelabs.example.TestSetup')
+data.setCell(3, 3, 128653);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'twoPlusTwoOperation')
+data.setCell(4, 2, 'com.saucelabs.example.TestSetup')
+data.setCell(4, 3, 104803);
+window.suiteTableData['com.saucelabs.example.TestSetup']= { tableData: data, tableDiv: 'times-div-com.saucelabs.example.TestSetup'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
+              <div id="times-div-com.saucelabs.example.TestSetup">
+              </div> <!-- times-div-com.saucelabs.example.TestSetup -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for com.saucelabs.example.TestSetup</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-com.saucelabs.example.TestSetup" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.saucelabs.example.TestSetup</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">twoPlusTwoOperation(Android, HTC Nexus 9, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">twoPlusTwoOperation(Android, Google Pixel, 7, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">twoPlusTwoOperation(Android, Samsung Galaxy S5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">twoPlusTwoOperation(Android, LG Nexus 5, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java.lang.St...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">twoPlusTwoOperation(Android, Samsung Galaxy S6, 6, public void com.saucelabs.example.TestSetup.twoPlusTwoOperation(java....)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=twoPlusTwoOperation status=FAILURE method=TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">105017 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=twoPlusTwoOperation status=FAILURE method=TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">128657 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=twoPlusTwoOperation status=FAILURE method=TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">133030 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=twoPlusTwoOperation status=FAILURE method=TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">159462 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=twoPlusTwoOperation status=FAILURE method=TestSetup.twoPlusTwoOperation(java.lang.S...)</span>
+                <span class="method-start">165289 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
